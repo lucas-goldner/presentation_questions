@@ -15,7 +15,7 @@ Handler middleware(Handler handler) => handler
         shelf.corsHeaders(
           headers: {
             shelf.ACCESS_CONTROL_ALLOW_ORIGIN:
-                'https://master-presentation-questions.globeapp.dev',
+                'https://presentation-answer.globeapp.dev',
           },
         ),
       ),
