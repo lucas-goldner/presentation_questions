@@ -1,9 +1,6 @@
 import 'package:dart_frog/dart_frog.dart';
 
 import '../cubits/testing_question_cubit.dart';
-import '../middleware/testing_question_provider.dart';
-
-Handler middleware(Handler handler) => handler.use(testingQuestionProvider);
 
 Future<Response> onRequest(RequestContext context) async {
   final body = await context.request.json() as Map<String, dynamic>;
